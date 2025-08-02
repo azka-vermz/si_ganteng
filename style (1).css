@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f6d365, #fda085);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 400px;
+}
+
+.question {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.ans-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.answer {
+    width: 100px;
+    height: 60px;
+    margin: 8px;
+    background-color: #eeeeee;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.answer:hover {
+    background-color: #d4edda;
+    transform: scale(1.05);
+}
+
+.answer.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.answer.wrong {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+.result p {
+    margin: 10px 0;
+}
+
